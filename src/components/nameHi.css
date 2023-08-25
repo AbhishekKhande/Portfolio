@@ -1,0 +1,134 @@
+.intro-main {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.introduction {
+  /* background-color: red; */
+  margin-left: 3%;
+  margin-top: 13%;
+  height: 50%;
+  width: 70%;
+  font-family: "Quantico", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.introduction p {
+  margin: 0%;
+}
+.Abhishek-Khande {
+  font-size: 4.5vmax;
+  font-weight: bolder;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid black;
+  animation: typewriter 3s steps(15, end) normal both,
+    blinkTextCursor 500ms 8 normal forwards;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 58%;
+  }
+}
+@keyframes blinkTextCursor {
+  0% {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  80% {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+.Frontend-Developer {
+  font-size: 3.5vmax;
+  font-weight: bolder;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #000000;
+  animation: typewriter1 4s steps(18, end) 4s normal both,
+    blinkTextCursor1 500ms infinite 4s normal backwards;
+}
+
+@keyframes typewriter1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 49%;
+  }
+}
+@keyframes blinkTextCursor1 {
+  0% {
+    border-right-color: transparent;
+  }
+  1% {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  80% {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+.right-pic {
+  margin-top: 13%;
+  height: 50%;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-image: url("../../public/84d25b677860816d8112a5a9b2d80a44-PhotoRoom.png-PhotoRoom.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .intro-main {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+  }
+  .introduction {
+    height: 50%;
+    width: 70%;
+    font-family: "Quantico", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Abhishek-Khande {
+    animation: none;
+    border-right: none;
+    font-size: 4.5vmax;
+    font-weight: bolder;
+  }
+  .Frontend-Developer {
+    animation: none;
+    border-right: none;
+    font-size: 3.5vmax;
+    font-weight: bolder;
+  }
+  .right-pic {
+    background-image: url("../../public/top-widgets-app-lockscreen-PhotoRoom.png-PhotoRoom.png");
+    height: 50%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+}

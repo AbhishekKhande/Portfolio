@@ -1,0 +1,71 @@
+.expert-div {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  gap: 3% 3%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills {
+  border-radius: 6px;
+  height: 25%;
+  width: 15%;
+}
+.skills:hover {
+  scale: calc(1.05);
+}
+#html {
+  background-image: url("../../public/html5-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#css {
+  background-image: url("../../public/css1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#javascript {
+  background-image: url("../../public/javascript-logo\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#react {
+  background-image: url("../../public/react-1-logo-png-transparent.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#redux {
+  background-image: url("../../public/redux-logo-png-transparent.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#node {
+  background-image: url("../../public/nodejs-1-logo-black-and-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#mongo {
+  background-image: url("../../public/mongodb-logo-black-and-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#express {
+  background-image: url("../../public/express-logo-PhotoRoom.png-PhotoRoom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media (max-width: 800px) {
+  .skills {
+    height: 20%;
+    width: 40%;
+  }
+}

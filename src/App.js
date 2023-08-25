@@ -1,24 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useEffect, useState } from "react";
+import "./App.css";
+import Contact from "./components/Contact";
+import Expertise from "./components/Expertise";
+import NameHi from "./components/NameHi";
+import Navbar from "./components/Navbar";
+import Work from "./components/Work";
 function App() {
+  const [select, setSelect] = useState("About");
+  const [prevSelect, setPrevSelect] = useState("");
+  const handleClick = (e) => {
+    console.log(select);
+    setSelect(e.target.id);
+  };
+
+  useEffect(() => {
+    setPrevSelect(select);
+  }, [select]);
+
+  const renderItem = () => {
+    if (select === "") setSelect(prevSelect);
+    switch (select) {
+      case "About":
+        return (
+          <>
+            <NameHi />
+          </>
+        );
+      case "Work":
+        return (
+          <>
+            <Work />
+          </>
+        );
+      case "Expertise":
+        return (
+          <>
+            <Expertise />
+          </>
+        );
+      case "Contact":
+        return (
+          <>
+            <Contact />
+          </>
+        );
+    }
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="background-color" onClick={handleClick}>
+        <Navbar />
+        {renderItem()}
+      </div>
+    </>
   );
 }
 

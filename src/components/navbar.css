@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 15%;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.navbar-items {
+  height: 50%;
+  width: 20%;
+  text-align: center;
+}
+.navbar-items p:hover {
+  cursor: pointer;
+  color: cornsilk;
+}
+@media (max-width: 800px) {
+  .navbar {
+    position: relative;
+    left: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-items {
+    width: 50%;
+  }
+}
